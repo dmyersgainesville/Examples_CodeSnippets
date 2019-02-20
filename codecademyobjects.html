@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <head>
 <script>
+
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet() {
+    console.log(this.dietType);
+  }
+};
+goat.diet();
+// Output was "ReferenceError: dataType is not defined"
+// Changed to this.dietType and code works
 </script>
 <title>
 </title>
